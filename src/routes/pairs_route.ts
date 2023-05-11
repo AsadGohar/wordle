@@ -4,7 +4,7 @@ import {
   getPairsScoreEndpoint,
   abandonGameEndpoint,
   handleStartPairs,
-} from "../controllers/games/pairs/pairs";
+} from "../controllers/games/words/words";
 import { verifyUser } from "../middleware/authentication/authentication";
 
 const pairsRouter = express.Router();
