@@ -28,20 +28,11 @@ export interface AlchemyEnv {
 
 export interface EnvClassConstructorArgs {
   appEnv: App_ProcessEnvArg;
-  gameEnv: GameProcessEnvArg;
   DbEnv: DbProcessEnvArg;
-  AuthEnv: AuthEnvArg;
-  Alchemy: AlchemyEnvArg;
 }
 
 interface App_ProcessEnvArg {
   BACKEND_PORT: string | undefined;
-}
-
-interface GameProcessEnvArg {
-  TETRIS_KEY: string | undefined;
-  TETRIS_GAMETIME_SECONDS: string | undefined;
-  SLIDER_GAMETIME_SECONDS: string | undefined;
 }
 
 interface DbProcessEnvArg {
@@ -52,12 +43,3 @@ interface DbProcessEnvArg {
   PORT: string | undefined;
 }
 
-interface AuthEnvArg {
-  THIRDWEB_AUTH_PRIVATE_KEY: string | undefined;
-  THIRDWEB_AUTH_DOMAIN: string | undefined;
-  CHAINID: string | undefined;
-}
-
-interface AlchemyEnvArg {
-  API_KEY: string | undefined;
-}

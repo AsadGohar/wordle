@@ -12,9 +12,9 @@
     "socket.io": "^4.5.2"
   },
   "scripts": {
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/app.js\"",
-    "build": "npx tsc",
-    "start": "node build/app.js"
+    "dev": "node api.js && concurrently \"npx tsc --watch\" \"nodemon -q build/app.js\"",
+    "build": "node api.js && npx tsc",
+    "start": "node api.js && node build/app.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
